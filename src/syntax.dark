@@ -1,0 +1,11 @@
+#0 = 1
+#1 = 2
+
+@main
+    call @perform_addition #0 #1
+
+@perform_addition $1 $2
+    push $1
+    push $2
+    add
+    ret
